@@ -16,7 +16,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.content_wrapper {
+.container {
     max-width: 1152px;
     margin: auto;
 }

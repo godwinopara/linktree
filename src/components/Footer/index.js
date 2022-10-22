@@ -1,5 +1,5 @@
 import ZuriLogo from "../../images/logo.svg";
-import I4GLogo from "../../images/I4G.png";
+import I4GLogo from "../../images/I4G.svg";
 import "./footer.css";
 
 const Footer = () => {
