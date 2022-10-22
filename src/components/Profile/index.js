@@ -1,6 +1,7 @@
 import profileImg from "../../images/profile__img.svg";
 import "./profile.css";
 import shareBtn from "../../images/share.svg";
+import shareBtnMobile from "../../images/3dots.svg";
 
 const Profile = () => {
   return (
@@ -10,8 +11,18 @@ const Profile = () => {
         <div className="tooltip">
           <span className="tooltip-txt">Share Link</span>
         </div>
-
-        <img src={shareBtn} alt="share icon" />
+        <div className="share-btn-wrapper">
+          <img
+            className="share-btn-icon share-btn-desktop"
+            src={shareBtn}
+            alt="share icon"
+          />
+          <img
+            className="share-btn-icon share-btn-mobile"
+            src={shareBtnMobile}
+            alt="share icon"
+          />
+        </div>
       </div>
       <div className="profile-img">
         <img src={profileImg} alt="profile" id="profile__img" />

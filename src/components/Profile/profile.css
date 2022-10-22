@@ -28,18 +28,29 @@ img {
 
 }
 
-
-
-.share_btn img {
+.share-btn-wrapper {
     border: 2px dotted #D0D5DD;
-    padding: 12.99px;
+    height: 40px;
+    width: 40px;
     border-radius: 100%;
-    margin-bottom: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
 
-.share_btn img:hover {
+.share-btn-mobile {
+    display: none;
+}
+
+.share-btn-desktop {
+    height: 14.02px;
+    width: 15.19px;
+}
+
+.share-btn-wrapper:hover {
     background-color: #D0D5DD;
+    border: 2px dotted #b3b3b3;
 }
 
 .tooltip {
@@ -86,7 +97,6 @@ img {
 
 .profile-img {
     position: relative;
-    overflow: hidden;
 }
 
 .profile-img::before {
@@ -107,4 +117,23 @@ img {
 .profile-img:hover::before {
     transition: 0.5s ease-in-out;
     transform: scale(1);
+}
+
+
+
+/* MOBILE LAYOUT */
+
+@media screen and (max-width:600px) {
+    .share_btn {
+        width: 280px;
+    }
+
+    .share-btn-desktop {
+        display: none;
+    }
+
+    .share-btn-mobile {
+        display: block;
+        padding: 10px;
+    }
 }

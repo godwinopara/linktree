@@ -17,3 +17,22 @@ p {
     line-height: 24px;
     color: #667085;
 }
+
+
+@media screen and (max-width: 1000px) {
+    footer {
+        padding: 40px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+    }
+
+    .footer-wrapper>* {
+        margin-bottom: 20px;
+    }
+}
