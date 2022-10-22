@@ -10,13 +10,14 @@ const Profile = () => {
         <div className="tooltip">
           <span className="tooltip-txt">Share Link</span>
         </div>
-        {/*  */}
+
         <img src={shareBtn} alt="share icon" />
       </div>
       <div className="profile-img">
-        <img src={profileImg} alt="" />
+        <img src={profileImg} alt="profile" id="profile__img" />
       </div>
-      <h1>Annette Black</h1>
+      <h1 id="twitter">Godwinopara12</h1>
+      {/* <h2></h2> */}
     </section>
   );
 };
