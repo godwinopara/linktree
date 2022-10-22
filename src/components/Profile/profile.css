@@ -19,6 +19,71 @@ img {
     height: 100%;
 }
 
+.share_btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 600px;
+    margin: auto;
+    position: relative;
+
+}
+
+
+
+.share_btn img {
+    border: 2px dotted #D0D5DD;
+    padding: 12.99px;
+    border-radius: 100%;
+    margin-bottom: -20px;
+    cursor: pointer;
+}
+
+.share_btn img:hover {
+    background-color: #D0D5DD;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltip-txt {
+    position: absolute;
+    background-color: #101828;
+    color: white;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    width: 85px;
+    height: 34px;
+    margin-left: -100px;
+    margin-top: 5px;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.tooltip .tooltip-txt::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    /* To the right of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+
+}
+
+.share_btn:hover .tooltip-txt {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
 .profile-img {
     position: relative;
     overflow: hidden;
