@@ -20,29 +20,3 @@ body {
     max-width: 1152px;
     margin: auto;
 }
-
-.links-wrapper {
-    margin-top: 56px
-}
-
-a {
-    display: block;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #EAECF0;
-    border: 1px solid #EAECF0;
-    padding: 24px 32px;
-    margin-bottom: 24px;
-    border-radius: 8px;
-    color: #101828;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.8rem;
-    line-height: 28px;
-}
-
-a:hover {
-    background-color: #D0D5DD;
-}
