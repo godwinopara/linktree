@@ -1,0 +1,13 @@
+.social {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 64px;
+    padding: 24px;
+}
+
+.social a:not(:last-child) {
+    margin-right: 24px;
+}
