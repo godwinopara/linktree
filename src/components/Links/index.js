@@ -9,7 +9,7 @@ const Links = () => {
       subText: "",
     },
     {
-      id: "btn_zuri",
+      id: "btn__zuri",
       name: "Zuri Team",
       url: "https://training.zuri.team/",
     },
@@ -21,11 +21,10 @@ const Links = () => {
         "Look no further on where to get the best books on design and coding",
     },
     {
-      id: "book_python",
+      id: "book__python",
       name: "Python Books",
       url: "https://books.zuri.team/python-for-beginners?ref_id=godwin",
-      subText:
-        "Want the best books to help you become a professional python, Look no further.",
+      subText: "Get Top notch detailed python books here",
     },
     {
       id: "pitch",
@@ -35,7 +34,7 @@ const Links = () => {
         "Not sure about your programming skills, we can do a background check for you",
     },
     {
-      id: "book_desing",
+      id: "book__desing",
       name: "Design Books",
       url: "https://books.zuri.team/design-rules",
       subText:

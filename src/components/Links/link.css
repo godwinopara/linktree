@@ -11,7 +11,7 @@
     background-color: #EAECF0;
     border: 1px solid #EAECF0;
     padding: 24px 32px;
-    margin-bottom: 24px;
+    margin-bottom: 34px;
     border-radius: 8px;
     color: #101828;
     text-decoration: none;
@@ -30,18 +30,21 @@
 
 .subtext {
     position: absolute;
-    bottom: 0;
+    bottom: -35px;
     width: 100%;
     text-align: center;
-    padding: 5px;
+    padding: 5px 1px;
+    background-color: rgb(38, 38, 38);
+    color: white;
+    margin-bottom: 10px;
     font-size: 1.5rem;
     display: none;
     cursor: pointer;
 }
 
 .pitch:hover .subText-pitch,
-.book_desing:hover .subText-book_desing,
-.book_python:hover .subText-book_python,
+.book__desing:hover .subText-book__desing,
+.book__python:hover .subText-book__python,
 .books:hover .subText-books {
     display: block;
 }
