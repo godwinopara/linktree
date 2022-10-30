@@ -23,3 +23,25 @@
 .links-wrapper a:hover {
     background-color: #D0D5DD;
 }
+
+.link {
+    position: relative;
+}
+
+.subtext {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+
+.pitch:hover .subText-pitch,
+.book_desing:hover .subText-book_desing,
+.book_python:hover .subText-book_python,
+.books:hover .subText-books {
+    display: block;
+}

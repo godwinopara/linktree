@@ -27,8 +27,12 @@ const Profile = () => {
       <div className="profile-img">
         <img src={profileImg} alt="profile" id="profile__img" />
       </div>
+
+      {/* twitter username */}
       <h1 id="twitter">Godwinopara12</h1>
-      {/* <h2></h2> */}
+
+      {/* slack username */}
+      <h2 id="slack">godwin</h2>
     </section>
   );
 };
