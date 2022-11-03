@@ -5,6 +5,7 @@ const Contact = () => {
   const lastname = useRef();
   const email = useRef();
   const message = useRef();
+  const name = "Godwin";
 
   return (
     <>
@@ -77,7 +78,7 @@ const Contact = () => {
               className="mt-1 border"
             />
             <label htmlFor="checkbox_agree" className="text-sm ml-3">
-              You agree to providing your data to Godwin Opara who may contact
+              You agree to providing your data to {name} Opara who may contact
               you
             </label>
           </div>
