@@ -21,15 +21,19 @@ p {
 
 @media screen and (max-width: 1000px) {
     footer {
-        padding: 40px 20px;
+        padding: 32px 16px;
         display: flex;
         align-items: center;
-        justify-content: center;
-        text-align: center;
+        justify-content: flex-start;
+        text-align: left;
     }
 
     .footer-wrapper {
         flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
     }
 
     .footer-wrapper>* {
