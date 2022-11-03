@@ -10,6 +10,9 @@ module.exports = {
       spacing: {
         90: "21.44rem", // 343px
       },
+      maxWidth: {
+        "2xxl": "720px",
+      },
     },
   },
   plugins: [],

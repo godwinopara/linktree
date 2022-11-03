@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <>
-      <header className="pt-24 px-6 mb-12">
+      <header className="pt-24 px-6 mb-12 max-w-2xxl md:mx-auto">
         <div>
           <h1 className="text-4xl font-semibold mb-6">Contact Me</h1>
           <p className="text-lg">
@@ -10,9 +10,9 @@ const Contact = () => {
         </div>
       </header>
       <main>
-        <form className="px-6 mb-24">
-          <div>
-            <div className="flex flex-col mb-9">
+        <form className="px-6 mb-24 max-w-2xxl md:mx-auto">
+          <div className="md:flex md:justify-between">
+            <div className="flex flex-col mb-9 md:w-full md:mr-6">
               <label htmlFor="firstname" className="">
                 First Name
               </label>
@@ -23,7 +23,7 @@ const Contact = () => {
                 id="first_name"
               />
             </div>
-            <div className="flex flex-col mb-9">
+            <div className="flex flex-col mb-9 md:w-full">
               <label htmlFor="lastname" className="">
                 Last Name
               </label>
@@ -66,7 +66,7 @@ const Contact = () => {
               className="mt-1"
             />
             <label htmlFor="checkbox_agree" className="text-sm ml-3">
-              You agree to providing your date to Godwin Opara who may contact
+              You agree to providing your data to Godwin Opara who may contact
               you
             </label>
           </div>
