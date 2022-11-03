@@ -1,50 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-/* *,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-    html {
-        /* font-size: 62.5%; */
-        overflow-x: hidden;
-        font-family: 'Inter', sans-serif;
-        overflow-x: hidden;
-    }
+  html {
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+  }
 
-    form input,
-    textarea {
-        border: 1px solid #D0D5DD;
-        @apply rounded-lg border-gray-300 p-2
-    }
+  body {
+    overflow: hidden;
+  }
 
-    label:not(:last-child) {
-        @apply text-gray-700 text-sm font-medium mb-2
-    }
+  form input,
+  textarea {
+    border: 1px solid #d0d5dd;
+    @apply rounded-lg border-gray-300 p-2;
+  }
+
+  label:not(:last-child) {
+    @apply text-gray-700 text-sm font-medium mb-2;
+  }
+
+  img {
+    max-width: 100%;
+  }
 }
 
+@layer components {
+  .tooltip {
+    @apply relative;
+  }
 
-.container {
+  .tooltip .tooltip-txt {
+    @apply absolute text-white text-center py-2 px-3 rounded-lg font-semibold text-xs z-10 opacity-0 cursor-pointer;
+    background-color: #101828;
+    width: 85px;
+    height: 34px;
+    margin-left: -100px;
+    margin-top: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .tooltip .tooltip-txt::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    /* To the right of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-color: transparent transparent transparent black;
+    @apply absolute top-2/4 border-solid;
+  }
+
+  .share_btn:hover .tooltip-txt {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .btn__link {
+    @apply text-center flex items-center justify-center bg-gray-200 border-gray-200 py-6 px-8 mb-10 rounded-lg text-gray-900 no-underline font-bold text-lg hover:bg-gray-300;
+  }
+
+  .pitch:hover .subText-pitch,
+  .book__desing:hover .subText-book__desing,
+  .book__python:hover .subText-book__python,
+  .books:hover .subText-books {
+    display: block;
+  }
+
+  .profile-img::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(38, 38, 38, 0.8);
+    position: absolute;
+    inset: 0;
+    border-radius: 100%;
+    background-image: url("./images/camera.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 82%;
+    transform: scale(0);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  .profile-img:hover::before {
+    transition: 0.5s ease-in-out;
+    transform: scale(1);
+  }
+
+  .container {
     max-width: 1152px;
     margin: auto;
-}
+  }
 
-h2 {
+  h2 {
     display: none;
-}
+  }
 
-
-@media screen and (max-width:1152px) {
+  @media screen and (max-width: 1152px) {
     .container {
-        padding: 0 16px;
+      padding: 0 16px;
     }
-
+  }
 }

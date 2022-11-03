@@ -1,4 +1,11 @@
+import { useRef } from "react";
+
 const Contact = () => {
+  const firstname = useRef();
+  const lastname = useRef();
+  const email = useRef();
+  const message = useRef();
+
   return (
     <>
       <header className="pt-24 px-6 mb-12 max-w-2xxl md:mx-auto">
@@ -21,6 +28,7 @@ const Contact = () => {
                 name="firstname"
                 placeholder="Enter your first name"
                 id="first_name"
+                ref={firstname}
               />
             </div>
             <div className="flex flex-col mb-9 md:w-full">
@@ -32,6 +40,7 @@ const Contact = () => {
                 name="lastname"
                 placeholder="Enter your last name"
                 id="last_name"
+                ref={lastname}
               />
             </div>
           </div>
@@ -44,6 +53,7 @@ const Contact = () => {
               name="email"
               id="email"
               placeholder="youremail@email.com"
+              ref={email}
             />
           </div>
           <div className="flex flex-col mb-9">
@@ -56,6 +66,7 @@ const Contact = () => {
               cols="30"
               rows="10"
               placeholder="Send me message and I will reply as soon as possible"
+              ref={message}
             ></textarea>
           </div>
           <div className="mb-9 flex items-start justify-center">
@@ -63,7 +74,7 @@ const Contact = () => {
               type="checkbox"
               name="checkbox_agree"
               id="checkbox_agree"
-              className="mt-1"
+              className="mt-1 border"
             />
             <label htmlFor="checkbox_agree" className="text-sm ml-3">
               You agree to providing your data to Godwin Opara who may contact
@@ -72,6 +83,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
+            id="btn__submit"
             className="bg-blue-750 border border-blue-750 font-semibold text-base h-12  w-full text-white rounded-xl"
           >
             Send message

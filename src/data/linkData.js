@@ -37,9 +37,4 @@ export const linksData = [
     subText:
       "Get the best design book that will help you create truly professional designs",
   },
-  {
-    id: "contact",
-    name: "Contact Me",
-    url: "/contact",
-  },
 ];
