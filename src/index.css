@@ -27,6 +27,10 @@
   img {
     max-width: 100%;
   }
+
+  span {
+    @apply text-red-400 mt-1;
+  }
 }
 
 @layer components {
