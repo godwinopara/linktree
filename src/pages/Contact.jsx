@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   // Form Contol values
@@ -25,13 +26,14 @@ const Contact = () => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       alert("Message Send successfully");
     }
+
+    //eslint-disable-next-line
   }, [formErrors, isSubmit]);
 
   // Handle form submition
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    console.log(isChecked);
     const formData = {
       firstname: firstname.current.value,
       lastname: lastname.current.value,
@@ -42,7 +44,6 @@ const Contact = () => {
     // If there is error update the formError data
     setFormErrors(validate(formData));
 
-    // Set the form value to an empty string after successfull validation
     setIsSubmit(true);
   };
 
@@ -148,6 +149,7 @@ const Contact = () => {
               name="checkbox_agree"
               id="checkbox_agree"
               className="mt-1 border"
+              checked={isChecked}
               onChange={(e) => setIsChecked(e.target.checked)}
             />
             <label htmlFor="checkbox_agree" className="text-sm ml-3">
