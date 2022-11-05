@@ -19,6 +19,7 @@ const Contact = () => {
       lastname.current.value = "";
       email.current.value = "";
       message.current.value = "";
+      setIsChecked(false);
     }
 
     if (Object.keys(formErrors).length === 0 && isSubmit) {
